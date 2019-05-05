@@ -1,8 +1,8 @@
 
 
 <?php
-$api_key = "AIzaSyCoaP_I7c5EL_1BzOmRjxB8utxFoI63tgY";
-$bot = "853440390:AAGlZlrkeo7Ejn02wnJYV06q4MoxbEXcIgk";
+$api_key = "Youtube api key ";
+$bot = "Telegram bot api key";
 $Telegram = "https://api.telegram.org/bot".$bot;
 $update = file_get_contents("php://input");
 $update = json_decode($update, TRUE);
@@ -50,4 +50,4 @@ $t1 = '&reply_markup={"keyboard":['.$tastiera.'],"resize_keyboard":true}';
     $Url= $GLOBALS[Telegram]."/sendMessage?chat_id=$id&parse_mode=HTML&text=".urlencode($t).$t1;
     file_get_contents($Url);
 }
-?>
+?>
